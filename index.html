@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiddle Parts Drag and Drop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Drag and Drop Parts of a Fiddle to Match with Its Function</h2>
+        <div class="fiddle-parts">
+            <div class="part" draggable="true" id="resonator">Resonator</div>
+            <div class="part" draggable="true" id="string">String</div>
+            <div class="part" draggable="true" id="bridge">Bridge</div>
+            <div class="part" draggable="true" id="membrane">Membrane</div>
+            <div class="part" draggable="true" id="tuning-peg">Tuning Peg</div>
+            <div class="part" draggable="true" id="bow">Bow</div>
+        </div>
+        <table>
+            <tr>
+                <th>Parts of a Fiddle</th>
+                <th>Functions</th>
+            </tr>
+            <tr>
+                <td class="dropzone" data-answer="resonator"></td>
+                <td>Amplifies or makes the sound louder.</td>
+            </tr>
+            <tr>
+                <td class="dropzone" data-answer="string"></td>
+                <td>Vibrates to make sounds.</td>
+            </tr>
+            <tr>
+                <td class="dropzone" data-answer="bridge"></td>
+                <td>Raises the string of the resonator and transfers some sounds to the membrane.</td>
+            </tr>
+            <tr>
+                <td class="dropzone" data-answer="membrane"></td>
+                <td>Transfers sound to the resonator.</td>
+            </tr>
+            <tr>
+                <td class="dropzone" data-answer="tuning-peg"></td>
+                <td>Used for tightening and loosening the string to tune the instrument.</td>
+            </tr>
+            <tr>
+                <td class="dropzone" data-answer="bow"></td>
+                <td>It is rubbed against the string to produce sound.</td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <button id="submit">Submit Answers</button>
+            <button id="redo">Redo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
